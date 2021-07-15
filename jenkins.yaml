@@ -12,7 +12,6 @@
     - name: download jenkins.repo
       get_url:
         url: wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
-        dest: /etc/
 
     - name: import jenkins key
       rpm_key:
